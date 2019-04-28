@@ -8,7 +8,7 @@ employee::employee () {
 employee::~employee () {
     setID (0);
     setAge (0);
-    setSallary (0);
+    setSalary (0);
 }
 
 //"Set" functions
@@ -28,8 +28,8 @@ void employee::setRole (string roleT) {
     role = roleT;
 }
 
-void employee::setSallary (int sallaryT) {
-    sallary = sallaryT;
+void employee::setSalary (int salaryT) {
+    salary = salaryT;
 }
 
 //"Get" functions
@@ -49,54 +49,6 @@ string employee::getRole () {
     return role;
 }
 
-int employee::getSallary () {
-    return sallary;
+int employee::getSalary () {
+    return salary;
 }
-
-//Address Class:
-
-employee::address::address(){
-//default const
-}
-
-employee::address::~address(){
-//destruct
-}
-
-employee::address::address(string streetT, string cityT, string stateT, int zipT) {
-//constructor with mem vars
-	street = streetT;
-	city = cityT;
-	state = stateT;
-	zip = zipT;
-}
-
-void employee::address::setStreet(string streetT) {
-	street = streetT;
-}
-void employee::address::setCity(string cityT) {
-	city = cityT;
-}
-void employee::address::setState(string stateT) {
-	state = stateT;
-}
-void employee::address::setZip(string zipT) {
-	zip = zipT;
-}
-
-string employee::address::getStreet() {
-	return street;
-}
-string employee::address::getCity() {
-	return city;
-}
-string employee::address::getState() {
-	return state;
-}
-string employee::address::getZip() {
-	return zip;
-}
-
-
-
-
